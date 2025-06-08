@@ -419,3 +419,47 @@ footer .copyright {
 h2 {
     text-align: center;
 }
+h3 {
+    text-align: center;
+}
+
+#motivational-content {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.articles-grid, .videos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 картки в ряд */
+  gap: 20px;
+}
+
+.article-card, .video-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.article-card h4 {
+  margin-top: 0;
+}
+
+.article-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  .articles-grid, .videos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .articles-grid, .videos-grid {
+    grid-template-columns: 1fr;
+  }
+}
