@@ -322,7 +322,7 @@ footer .copyright {
   text-decoration: none;
   display: block;
   font-size: 18px;
-  transition: background 0.3s;
+  transition: 0.3s;
   font-family: 'Roboto', sans-serif;
 }
 

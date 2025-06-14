@@ -1,122 +1,205 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>content</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/win.jpg" alt="WIN logo" />
+      </div>
 
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>content</title>
-        <link rel="stylesheet" href="style.css">
-</head>
+      <nav class="nav-links">
+        <a href="index.html">Головна</a>
 
-<body>
-        <header>
-                <div class="logo">
-                        <img src="images/win.jpg" alt="WIN logo">
-                </div>
+        <div class="dropdown">
+          <button class="dropbtn" id="catalogToggle">
+            Каталог товарів
+          </button>
 
-                <nav class="nav-links">
-                        <a href="index.html">Головна</a>
-                       
-                        <div class="dropdown">
-        <button class="dropbtn" id="catalogToggle">Каталог товарів</button>
+          <div class="dropdown-content" id="catalogMenu">
+            <a href="equipment.html">Тренувальне екіпірування</a>
 
-        <div class="dropdown-content" id="catalogMenu">
-          <a href="equipment.html">Тренувальне екіпірування</a>
-          
-          <a href="food.html">Спортивне харчування</a>
-          <a href="content.html">Мотиваційний контент</a>
+            <a href="food.html">Спортивне харчування</a>
+            <a href="content.html">Мотиваційний контент</a>
+          </div>
         </div>
+        <a href="#contact">Контакти</a>
+      </nav>
+
+      <div class="cart-icon">
+        <a href="basket.html">
+
+          <img src="https://cdn-icons-png.flaticon.com/512/325/325335.png" alt="Кошик іконка">
+         </a> 
       </div>
-                        <a href="#contact">Контакти</a>
-                </nav>
+    </header>
+    <main>
+      <section id="motivational-content">
+        <h2>Мотиваційний контент</h2>
 
-                <div class="cart-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/325/325335.png" alt="Кошик іконка">
-                </div>
-        </header>
-        <main>
-  <section id="motivational-content">
-    <h2>Мотиваційний контент</h2>
+        <div class="articles-section">
+          <h3>Корисні статті</h3>
+          <div class="articles-grid">
+            <article class="article-card">
+              <h4>5 причин почати тренування вже сьогодні</h4>
+              <p>
+                Тренування покращують настрій, знижують рівень стресу
+                та підвищують самооцінку. Регулярна активність
+                позитивно впливає не лише на тіло, а й на емоційний
+                стан. Це природний спосіб підтримувати впевненість.
+              </p>
+              <a
+                href="https://ligafitness.com.ua/motyvacziya/5-prychyn-pochaty-zajmatysya-fitnesom/"
+                >Читати далі</a
+              >
+            </article>
+            <article class="article-card">
+              <h4>Як спорт впливає на імунітет?</h4>
+              <p>
+                Фізична активність зміцнює імунну систему, допомагаючи
+                організму краще протистояти вірусам і зовнішнім
+                загрозам. Навіть 30 хвилин руху на день — це внесок у
+                здоров’я, енергію та стійкість до хвороб.
+              </p>
+              <a
+                href="https://bhealthyclinic.com.ua/news/vliyanie-fizicheskoy-aktivnosti-na-immunitet/"
+                >Читати далі</a
+              >
+            </article>
+            <article class="article-card">
+              <h4>Сон, харчування і тренування</h4>
+              <p>
+                Правильне поєднання руху, харчування та відпочинку —
+                основа здорового організму. Кожен із цих компонентів
+                посилює інші, створюючи баланс. Дізнайся, як
+                гармонійно впровадити ці звички у своє повсякдення.
+              </p>
+              <a
+                href="https://fitnessacademy.com.ua/articles/iak-son-vplyvaie-na-rezultaty-trenuvan/"
+                >Читати далі</a
+              >
+            </article>
+            <article class="article-card">
+              <h4>Тренування та ментальне здоров’я</h4>
+              <p>
+                Регулярний спорт зменшує симптоми тривоги й депресії,
+                активуючи вироблення ендорфінів — гормонів щастя. Це
+                природна підтримка ментального здоров’я, яка допомагає
+                почуватись краще навіть у складні дні.
+              </p>
+              <a
+                href="https://sport.nv.ua/ukr/other-sport/mentalne-zdorov-ya-i-fizichniy-rozvitok-3-sferi-yaki-pokrashchuyut-regulyarni-zanyattya-sportom-50430300.html"
+                >Читати далі</a
+              >
+            </article>
+          </div>
+        </div>
 
-    <div class="articles-section">
-      <h3>Корисні статті</h3>
-      <div class="articles-grid">
-        <article class="article-card">
-          <h4>5 причин почати тренування вже сьогодні</h4>
-          <p>Тренування покращують настрій, знижують рівень стресу та підвищують самооцінку. Регулярна активність позитивно впливає не лише на тіло, а й на емоційний стан. Це природний спосіб підтримувати впевненість.</p>
-          <a href="https://ligafitness.com.ua/motyvacziya/5-prychyn-pochaty-zajmatysya-fitnesom/">Читати далі</a>
-        </article>
-        <article class="article-card">
-          <h4>Як спорт впливає на імунітет?</h4>
-          <p>Фізична активність зміцнює імунну систему, допомагаючи організму краще протистояти вірусам і зовнішнім загрозам. Навіть 30 хвилин руху на день — це внесок у здоров’я, енергію та стійкість до хвороб.  </p>
-          <a href="https://bhealthyclinic.com.ua/news/vliyanie-fizicheskoy-aktivnosti-na-immunitet/">Читати далі</a>
-        </article>
-        <article class="article-card">
-          <h4>Сон, харчування і тренування</h4>
-          <p>Правильне поєднання руху, харчування та відпочинку — основа здорового організму. Кожен із цих компонентів посилює інші, створюючи баланс. Дізнайся, як гармонійно впровадити ці звички у своє повсякдення.</p>
-          <a href="https://fitnessacademy.com.ua/articles/iak-son-vplyvaie-na-rezultaty-trenuvan/">Читати далі</a>
-        </article>
-        <article class="article-card">
-          <h4>Тренування та ментальне здоров’я</h4>
-          <p>Регулярний спорт зменшує симптоми тривоги й депресії, активуючи вироблення ендорфінів — гормонів щастя. Це природна підтримка ментального здоров’я, яка допомагає почуватись краще навіть у складні дні.</p>
-          <a href="https://sport.nv.ua/ukr/other-sport/mentalne-zdorov-ya-i-fizichniy-rozvitok-3-sferi-yaki-pokrashchuyut-regulyarni-zanyattya-sportom-50430300.html">Читати далі</a>
-        </article>
+        <div class="videos-section">
+          <h3>Практичні поради</h3>
+          <div class="videos-grid">
+            <div class="video-card">
+              <iframe
+                width="100%"
+                height="200"
+                src="https://www.youtube.com/embed/LdwP8gfjWZo?si=y85kycsgsRqCGGX4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card">
+              <iframe
+                width="100%"
+                height="200"
+                src="https://www.youtube.com/embed/Q7pD_nuvdgk?si=_bhfvt-NNPSjhFL1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card">
+              <iframe
+                width="100%"
+                height="200"
+                src="https://www.youtube.com/embed/44a3eEWLGSU?si=u76bEmVTmAilsnq4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card">
+              <iframe
+                width="100%"
+                height="200"
+                src="https://www.youtube.com/embed/d0vubAiY5x8"
+                title="Супер мотивація: історія про те, як спорт мене змінив"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="contact" id="contact">
+        <h2>
+          <b><i>Контакти</i></b>
+        </h2>
+        <p>
+          <b>Адреса:</b> Київська область, місто Київ, вулиця Велика
+          Васильківська, 55
+        </p>
+        <p>
+          <b>Телефон:</b> +380731234567<br /><b>Email:</b> win@ukr.net
+        </p>
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.3770384642007!2d30.517387375487555!3d50.4340773885439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf028652a0f7%3A0xec1e925367a7a8e4!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JLQsNGB0LjQu9GM0LrQvtCy0YHQutCw0Y8sIDU1LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1749285323613!5m2!1sru!2sua"
+            width="600"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </p>
       </div>
-    </div>
-
-    <div class="videos-section">
-      <h3>Практичні поради</h3>
-      <div class="videos-grid">
-  <div class="video-card">
-    <iframe width="100%" height="200" src="https://www.youtube.com/embed/LdwP8gfjWZo?si=y85kycsgsRqCGGX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-  <div class="video-card">
-    <iframe width="100%" height="200" src="https://www.youtube.com/embed/Q7pD_nuvdgk?si=_bhfvt-NNPSjhFL1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-  <div class="video-card">
-    <iframe width="100%" height="200" src="https://www.youtube.com/embed/44a3eEWLGSU?si=u76bEmVTmAilsnq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-  <div class="video-card">
-     <iframe width="100%" height="200" src="https://www.youtube.com/embed/d0vubAiY5x8" title="Супер мотивація: історія про те, як спорт мене змінив" frameborder="0" allowfullscreen></iframe>
-  </div>
-</div>
-
-    </div>
-  </section>
-</main>
-
-        <footer>
-    <div class="contact" id="contact">
-      <h2><b><i>Контакти</i></b></h2>
-      <p><b>Адреса:</b> Київська область, місто Київ, вулиця Велика Васильківська, 55</p>
-      <p><b>Телефон:</b> +380731234567<br><b>Email:</b> win@ukr.net</p>
-      <p><iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.3770384642007!2d30.517387375487555!3d50.4340773885439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf028652a0f7%3A0xec1e925367a7a8e4!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JLQsNGB0LjQu9GM0LrQvtCy0YHQutCw0Y8sIDU1LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1749285323613!5m2!1sru!2sua"
-          width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-
-    </div>
-    <div class="soc">
-      <p><b>Знайдіть нас у соціальних мережах:</b></p> <a class="social" href="https://www.facebook.com/?locale=uk_UA">
-        <img src="images/facebook.jpg" alt="Facebook">
-      </a>
-      <a class="social" href="https://www.instagram.com/">
-  <img src="images/Instagram.jpg" alt="Instagram">
-</a>
+      <div class="soc">
+        <p><b>Знайдіть нас у соціальних мережах:</b></p>
+        <a
+          class="social"
+          href="https://www.facebook.com/?locale=uk_UA"
+        >
+          <img src="images/facebook.jpg" alt="Facebook" />
+        </a>
+        <a class="social" href="https://www.instagram.com/">
+          <img src="images/Instagram.jpg" alt="Instagram" />
+        </a>
         <a class="social" href="https://www.youtube.com/">
-  <img src="images/youtube.png" alt="YouTube">
-</a>
+          <img src="images/youtube.png" alt="YouTube" />
+        </a>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025. WIN. Всі права захищено.</p>
+      </div>
+    </footer>
 
-    </div>
-    <div class="copyright">
-      <p>&copy; 2025. WIN. Всі права захищено.</p>
-    </div>
-
-  </footer>
-
-  <script src="main.js"></script>
-
-       
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Basket</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleBtn = document.getElementById("catalogToggle");
+      const menu = document.getElementById("catalogMenu");
+
+      toggleBtn.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+
+      // Якщо хочете, щоб меню ховалося при кліку поза ним:
+      document.addEventListener("click", (event) => {
+        if (
+          !toggleBtn.contains(event.target) &&
+          !menu.contains(event.target)
+        ) {
+          menu.classList.remove("show");
+        }
+      });
+    });
+  </script>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/win.jpg" alt="WIN logo" />
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Головна</a>
+
+        <div class="dropdown">
+          <button class="dropbtn" id="catalogToggle">
+            Каталог товарів
+          </button>
+          <div class="dropdown-content" id="catalogMenu">
+            <a href="equipment.html">Тренувальне екіпірування</a>
+            <a href="food.html">Спортивне харчування</a>
+            <a href="content.html">Мотиваційний контент</a>
+          </div>
+        </div>
+        <a href="#contact">Контакти</a>
+      </nav>
+
+      <div class="cart-icon">
+        <a href="basket.html">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/325/325335.png"
+            alt="Кошик іконка"
+          />
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="basket_products"></div>
+    </main>
+  </body>
+  <script src="basket.js"></script>
+</html>
